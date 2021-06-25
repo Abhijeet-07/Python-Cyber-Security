@@ -1,0 +1,13 @@
+f = open("weather.txt","w")
+file.write("data inside file.")
+file.close()
+
+with open("weather.txt","w") as file:
+file.write("data inside file.")
+
+try:
+file=open("weather.txt","r")
+except I0Error:
+print("Error : Filename or file path is incorrect.")
+finally:
+print("exiting...")
